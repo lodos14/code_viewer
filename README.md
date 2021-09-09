@@ -19,3 +19,7 @@ https://lodos14.github.io/code_viewer/#/
 
 ![인공지능 뉴스 3](https://user-images.githubusercontent.com/81665608/132664988-3eb38aa0-75cb-439a-a448-a2a068afcf34.png)<br>
 참조[https://www.asiatime.co.kr/article/20210528500102?1=1]
+
+## 3. 개발 개요
+### Code Viewer 프로젝트는 jupyter notebook 또는 jupyterlab cell에 학생들이 작성한 코드 내용을 Python을 통해 추출해서 Firebase로 넘겨주고 제출한 코드를 데이터 베이스에 쿼리하여 React JS를 이용한 Code Viewer web Service를 구현하는 것을 목표로 함.
+
