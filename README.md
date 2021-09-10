@@ -2,11 +2,10 @@
 ## jupyter를 이용한 원활한 교육 진행을 보조하는 web service
 https://lodos14.github.io/code_viewer/#/
 
-## 1. 프로젝트 개발 환경
+## 1. 프로젝트 환경
+![환경](https://user-images.githubusercontent.com/81665608/132830954-663772c8-17d5-4132-9681-51c2b4c64261.png)
 
-![환경](https://user-images.githubusercontent.com/81665608/132659202-fb833cf7-59b8-420a-a136-2896a6b5b671.png)
-
-## 2. 개발 배경
+## 2. 프로젝트 배경
 - 최근 인공지능의 발달로 인해 인공지능 연구가 활발히 진행
 - 전문인재 수요의 급증으로 인공지능 관력 학과 설립 증대
 - 인공지능 연구와 학습에 최적인 Jupyter Notebook 과 Jupyterlab의 사용 증가
@@ -20,6 +19,16 @@ https://lodos14.github.io/code_viewer/#/
 ![인공지능 뉴스 3](https://user-images.githubusercontent.com/81665608/132664988-3eb38aa0-75cb-439a-a448-a2a068afcf34.png)<br>
 참조[https://www.asiatime.co.kr/article/20210528500102?1=1]
 
-## 3. 개발 개요
+## 3. 프로젝트 개요
 ### Code Viewer 프로젝트는 jupyter notebook 또는 jupyterlab cell에 학생들이 작성한 코드 내용을 Python을 통해 추출해서 Firebase로 넘겨주고 제출한 코드를 데이터 베이스에 쿼리하여 React JS를 이용한 Code Viewer web Service를 구현하는 것을 목표로 함.
+
+![개요](https://user-images.githubusercontent.com/81665608/132831130-e0793517-6b9e-4d5c-8e92-1d7b0ded2d7c.png)
+
+## 4. 프로젝트 과정
+### 4.1 코드 추출
+#### 4.4.1 IPython
+##### 먼저 IPython은 Jupyter Notebook, Jupyterlab의 커널로 사용이 되고 있고, 아나콘다 파이썬을 설치하면 자동으로 IPython의 패키지가 설치된다. IPython 패키지의 History.py에 있는 HistoryManager 객체가 Jupyter의 모든 실행 이력을 관리하는데 실행 이력을 호출하기 위해 다음 4.4.2와 같이 한다. 
+
+#### 4.4.2 get_ipython()
+
 
