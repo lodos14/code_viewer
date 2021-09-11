@@ -25,7 +25,7 @@ https://lodos14.github.io/code_viewer/#/
 ### 요약하면 아래 그림처럼 Cell에 작성한 과제 코드를 구현한 웹사이트에 게시하는 서비스를 만들려고 하는데
 ![jupyter](https://user-images.githubusercontent.com/81665608/132947612-9560b2a8-3d1f-4f34-8334-a519cb99e2e5.png)
 
-### 과정은 다음과 같 분활해서 진행하려고 한다.
+### 과정은 다음과 같이 분활해서 진행하려고 한다.
 ![개요](https://user-images.githubusercontent.com/81665608/132831130-e0793517-6b9e-4d5c-8e92-1d7b0ded2d7c.png)
 
 
