@@ -38,12 +38,15 @@ https://lodos14.github.io/code_viewer/#/
     from IPython import get_ipython  # IPython 패키지의 get_ipython을 import해준다.
     
     ip = get_ipython() 
-    history_run = ip.history_manager.get_range() # 제너레이터 형태로 실행 이력을 반환한다.  
+    run_history = ip.history_manager.get_range() # 제너레이터 형태로 실행 이력을 반환한다.  
     
-    for record in history_run :  # 반복문으로 돌려주면 현재 커널에서 실행한 기록을 하나씩 출력 할 수 있다.
-        print(record)
+    for code_info in run_history :  # 반복문으로 돌려주면 현재 커널에서 실행한 기록을 하나씩 출력 할 수 있다.
+        print(code_info)
 
-##### 예제를 하나 작성 하면
-    
+##### 예제를 하나 보면 다음과 같이 출력이 된다. code_info는 실행 번호와 Cell에 작성한 코드를 큐플 타입으로 가지고 있는데 출력 결과를 보면 코드를 2번 Index에 Text 형태로 저장 하고있다. 
+![추출 예제](https://user-images.githubusercontent.com/81665608/132984050-53a1415b-32b1-48a1-add0-8981b4881ad0.png)
 
+##### 이를 이용해 빈 리스트에 code_info의 2번 Index만 추가를 해서 코드 데이터로만 이루어진 새로운 배열을 만들고 이 배열의 마지막 Index 데이터를 가져오면 현재 제출하려는 코드만 추출 할 수 있다.
 
+##### Firebase에 전송하는 기능과 이 코드를 추출하는 기능을 묶어서 하나의 파일로 모듈화를 하면 다음과 같이 사용이 가능하다. 모듈화한 코드를 짧게 설명하자면 매개변수로 자신의 ID와 작성한 코드 제목을 전해주면 방금 실행한 코드를 Firebase(데이터베이스)에 전송하고 전송한 코드와 보낸 시간을 출력하는 모듈이다. 사용방법은 000에 설명하였다.
+![모듈 예제](https://user-images.githubusercontent.com/81665608/132985134-d5dd2ae5-b3d3-4758-8926-18e4ab75ece4.png)
