@@ -1,5 +1,5 @@
 # code viewer (version 1)
-## jupyter를 이용한 원활한 교육 진행을 보조하는 Web Service
+## jupyter를 이용한 교육 진행을 보조하는 Web Service
 https://lodos14.github.io/code_viewer/#/
 
 ## 1. 프로젝트 환경
@@ -33,7 +33,7 @@ https://lodos14.github.io/code_viewer/#/
 ## 4. 프로젝트 과정
 ### 4.1 코드 추출
 #### IPython
-##### 먼저 IPython은 Jupyter Notebook, Jupyterlab의 커널로 사용이 되고 있고, 아나콘다 파이썬을 설치하면 자동으로 IPython의 패키지가 설치된다. IPython 패키지의 History.py에 있는 HistoryManager 객체가 Jupyter의 모든 실행 이력을 관리하는데 실행 이력을 호출하기 위해 아래와 같이 코드 작성을 한다.
+#### 먼저 IPython은 Jupyter Notebook, Jupyterlab의 커널로 사용이 되고 있고, 아나콘다 파이썬을 설치하면 자동으로 IPython의 패키지가 설치된다. IPython 패키지의 History.py에 있는 HistoryManager 객체가 Jupyter의 모든 실행 이력을 관리하는데 실행 이력을 호출하기 위해 아래와 같이 코드 작성을 한다.
 
     from IPython import get_ipython  # IPython 패키지의 get_ipython을 import해준다.
     
@@ -43,10 +43,13 @@ https://lodos14.github.io/code_viewer/#/
     for code_info in run_history :  # 반복문으로 돌려주면 현재 커널에서 실행한 기록을 하나씩 출력 할 수 있다.
         print(code_info)
 
-##### 예제를 하나 보면 다음과 같이 출력이 된다. code_info는 실행 번호와 Cell에 작성한 코드를 큐플 타입으로 가지고 있는데 출력 결과를 보면 코드를 2번 Index에 Text 형태로 저장 하고있다. 
+#### 예제를 하나 보면 다음과 같이 출력이 된다. code_info는 실행 번호와 Cell에 작성한 코드를 큐플 타입으로 가지고 있는데 출력 결과를 보면 코드를 2번 Index에 Text 형태로 저장 하고있다. 
 ![추출 예제](https://user-images.githubusercontent.com/81665608/132984050-53a1415b-32b1-48a1-add0-8981b4881ad0.png)
 
-##### 이를 이용해 빈 리스트에 code_info의 2번 Index만 추가를 해서 코드 데이터로만 이루어진 새로운 배열을 만들고 이 배열의 마지막 Index 데이터를 가져오면 현재 제출하려는 코드만 추출 할 수 있다.
+#### 이를 이용해 빈 리스트에 code_info의 2번 Index만 추가를 해서 코드 데이터로만 이루어진 새로운 배열을 만들고 이 배열의 마지막 Index 데이터를 가져오면 현재 제출하려는 코드만 추출 할 수 있다.
 
-##### Firebase에 전송하는 기능과 이 코드를 추출하는 기능을 묶어서 하나의 파일로 모듈화를 하면 다음과 같이 사용이 가능하다. 모듈화한 코드를 짧게 설명하자면 매개변수로 자신의 ID와 작성한 코드 제목을 전해주면 방금 실행한 코드를 Firebase(데이터베이스)에 전송하고 전송한 코드와 보낸 시간을 출력하는 모듈이다. 사용방법은 000에 설명하였다.
+#### Firebase에 전송하는 기능과 이 코드를 추출하는 기능을 묶어서 하나의 파일로 모듈화를 하면 다음과 같이 사용이 가능하다. 모듈화한 코드를 짧게 설명하자면 매개변수로 자신의 ID와 작성한 코드 제목을 전해주면 방금 실행한 코드를 Firebase(데이터베이스)에 전송하고 전송한 코드와 보낸 시간을 출력하는 모듈이다. 사용방법은 000에 설명하였다.
 ![모듈 예제](https://user-images.githubusercontent.com/81665608/132985134-d5dd2ae5-b3d3-4758-8926-18e4ab75ece4.png)
+
+## 5. Firebase
+### Firebase는 구글에서 서비스하는 데이터베이스이다. 데이터베이스로 Firebase를 선택한 이유는 백 엔드 코드를 작성하지 않아도 공식 문서를 보면서 코드를 작성하면 누구나 쉽게 데이터베이스를 사용할 수 있어서이다. 그래서 데이터를 어떤 형태로 구조화할 것인가에 대해서만 고민을 했다. 
