@@ -26,15 +26,24 @@ https://lodos14.github.io/code_viewer/#/
 ![jupyter](https://user-images.githubusercontent.com/81665608/132947612-9560b2a8-3d1f-4f34-8334-a519cb99e2e5.png)
 
 ### 과정은 다음과 같이 분활해서 진행하려고 한다.
-![개요](https://user-images.githubusercontent.com/81665608/132831130-e0793517-6b9e-4d5c-8e92-1d7b0ded2d7c.png)
+![개요](https://user-images.githubusercontent.com/81665608/132974155-2ffc659e-8845-4e79-aef5-9db6bc094cbd.png)
 
 
 
 ## 4. 프로젝트 과정
 ### 4.1 코드 추출
-#### 4.4.1 IPython
-##### 먼저 IPython은 Jupyter Notebook, Jupyterlab의 커널로 사용이 되고 있고, 아나콘다 파이썬을 설치하면 자동으로 IPython의 패키지가 설치된다. IPython 패키지의 History.py에 있는 HistoryManager 객체가 Jupyter의 모든 실행 이력을 관리하는데 실행 이력을 호출하기 위해 다음 4.4.2와 같이 한다. 
+#### IPython
+##### 먼저 IPython은 Jupyter Notebook, Jupyterlab의 커널로 사용이 되고 있고, 아나콘다 파이썬을 설치하면 자동으로 IPython의 패키지가 설치된다. IPython 패키지의 History.py에 있는 HistoryManager 객체가 Jupyter의 모든 실행 이력을 관리하는데 실행 이력을 호출하기 위해 아래와 같이 코드 작성을 한다.
 
-#### 4.4.2 get_ipython()
+    from IPython import get_ipython  # IPython 패키지의 get_ipython을 import해준다.
+    
+    ip = get_ipython() 
+    history_run = ip.history_manager.get_range() # 제너레이터 형태로 실행 이력을 반환한다.  
+    
+    for record in history_run :  # 반복문으로 돌려주면 현재 커널에서 실행한 기록을 하나씩 출력 할 수 있다.
+        print(record)
+
+##### 예제를 하나 작성 하면
+    
 
 
