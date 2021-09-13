@@ -59,3 +59,6 @@ https://lodos14.github.io/code_viewer/#/
 
 ### 그래서 다음 Version2에서는 다음과 같은 구조를 이용해서 만들 생각이다. 데이터 구조 자체도 엄청 깔끔해졌고 Web에서 데이터를 쿼리할 때에도 전보다 훨씬 효율적인 구조가 됐다.
 ![변경 데이터 구조](https://user-images.githubusercontent.com/81665608/132991516-d4bff623-bcb3-4747-bb62-2b8d5d3e63a8.png)
+
+## 6. 웹
+### 웹은 React JS로 구현을 했다.  
