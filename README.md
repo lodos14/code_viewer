@@ -1,6 +1,7 @@
+## 100%에서는 이미지가 깨짐 현상이 있으므로 125% ~ 150%로 확대해서 보시면 잘 보입니다.
+
 # code viewer (version 1)
 ## jupyter를 이용한 교육 진행을 보조하는 Web Service
-https://lodos14.github.io/code_viewer/#/
 
 ## 1. 프로젝트 환경
 ![환경](https://user-images.githubusercontent.com/81665608/132830954-663772c8-17d5-4132-9681-51c2b4c64261.png)
