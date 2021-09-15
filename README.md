@@ -87,7 +87,7 @@ https://lodos14.github.io/code_viewer/#/
 ![회원가입](https://user-images.githubusercontent.com/81665608/133463567-badd2aef-5526-455a-81eb-8c9f8dfb58ec.png)
 
 #### 회원가입을 정상적으로 완료하면 아래와 같은 화면이 나온다.
-![home화면](https://user-images.githubusercontent.com/81665608/133465272-3eec15a0-57f7-41ee-b699-d8d060f863ca.png)
+![home화면](https://user-images.githubusercontent.com/81665608/133479950-b970a5d3-9c7b-465d-993d-079fb08d9536.png)
 
 ### 7.3 코드 업로드
 #### Jupyter Notebook 또는 Jupyterlab를 실행한다. 아래 예시는 Jupyterlab를 사용했다.
