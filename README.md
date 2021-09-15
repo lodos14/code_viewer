@@ -106,4 +106,3 @@ https://lodos14.github.io/code_viewer/#/
 #### 그 후 웹에서 새로고침 후 왼쪽의 이름을 클릭하면 업로드 완료된 코드 제목 목록이 나오고 제목을 클릭하면 아래와 같이 업로드한 코드를 볼 수 있다.
 ![업로드 완료](https://user-images.githubusercontent.com/81665608/133473699-33ca6b43-651b-46fd-b578-d9a5b8c76395.png)
 
-![text](https://user-images.githubusercontent.com/81665608/133477324-22fe63ae-0e8f-45e6-aec1-cba720026a25.png)
