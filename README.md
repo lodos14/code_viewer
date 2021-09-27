@@ -73,7 +73,7 @@
 
 ## 7. 사용방법
 ### 7.1 패키지 설치
-#### 아나콘다의 가상환경에서 터미널에 아래 명령어를 작성한다.
+#### 아나콘다 가상환경에서 터미널에 아래 명령어를 작성한다.
     pip install submit_code
 #### submit_code 패키지는 Jupyter Notebook 또는 jupyterlab의 환경에서 사용할 수 있다. 
     
