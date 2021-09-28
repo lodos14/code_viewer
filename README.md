@@ -17,10 +17,6 @@
 ![인공지능 뉴스 2](https://user-images.githubusercontent.com/81665608/132664981-3f4cc865-bb8c-4193-9d9d-378012eeac30.png)<br>
 참조[https://www.chosun.com/special/special_section/2021/04/12/EOYWWWGCPVD2LO73VTUTDXBCPA/]
 
-
-<a href="https://techstock.biz" target="_blank">건망증이 심한 엔지니어</a>
-
-
 ![인공지능 뉴스 3](https://user-images.githubusercontent.com/81665608/132664988-3eb38aa0-75cb-439a-a448-a2a068afcf34.png)<br>
 참조[https://www.asiatime.co.kr/article/20210528500102?1=1]
 
